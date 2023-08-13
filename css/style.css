@@ -1,5 +1,5 @@
 :root {
-
+    --header-bg: #e3e4e6;
 }
 
 * {
@@ -20,27 +20,26 @@ button {
 a, li {
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 p {
     font-size: 20px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
+
+/* Header */
+header nav {
+    background: var(--header-bg);
+}
+
+
+/* Dropdown */
+.section.menu > * {
+    background: var(--header-bg);
+    border: 2px solid black;
+    text-decoration: underline black;
+}
+
+
 
 /* Main */
-
-.info .title {
-    padding: 5px 10px;
-    border: 2px solid white;
-    width: fit-content;
-}
-
-.cards-container > * {
-    /* border: 2px solid white; */
-    /* background: #999b9e; */
-    padding: 0.5rem;
-    height: fit-content;
-}
-.cards-container h2 {
-    text-decoration: underline;
-}

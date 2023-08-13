@@ -8,7 +8,6 @@ header nav {
     justify-content: space-between;
     width: 100vw;
     height: 7rem;
-    background: black;
     padding: 1rem 3rem;
 }
 .logo {
@@ -17,6 +16,7 @@ header nav {
 }
 .logo img {
     height: 100%;
+    border: 3px solid black;
 }
 header nav ul {
     display: flex;
@@ -27,10 +27,43 @@ header nav ul {
 }
 
 
+/* Dropdown */
+a.dropdown-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+main > section {
+    width: 100%;
+    display: flex;
+}
+
+.section.menu {
+    position: relative;
+}
+.section.menu > * {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.section.menu > * ul li {
+    margin-bottom: 10px;
+}
+.dropdown.aktuelles {
+    position: absolute;
+    right: 35rem;
+}
+.dropdown.mitmachen {
+    position: absolute;
+    right: 10rem;
+}
+.not-visible {
+    opacity: 0;
+}
+
 /* Main */
 main {
     margin-top: 7rem;
-    padding: 3rem;
     width: 100vw;
 }
 .img-container {
@@ -47,28 +80,26 @@ main {
     object-fit: cover;
 }
 
-main > section {
+.section.bottom {
+    height: 700px;
     width: 100%;
-    height: 750px;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
 }
-.section.info {
+.section.bottom section {
+    padding: 4rem 0;
     display: flex;
-    flex-direction: column;
+    gap: 5rem;
+}
+.section.bottom section span {
+    display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 10px;
 }
-main h2 {
+.section.bottom section span i {
     font-size: 30px;
 }
-.cards-container {
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-}
-.cards-container > * {
-    width: 25%;
+.section.bottom p {
+    font-size: 30px;
 }
